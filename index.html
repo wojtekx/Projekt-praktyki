@@ -5,36 +5,38 @@
     <meta charset="utf-8">
     <title>Pobieranie danych api</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href: 'https://fonts.google.com/specimen/Lato' rel="stylesheet" />
-    <script type="text/javascript" src="pagination.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="lib/pagination.js"></script>
+
+
 </head>
 
 <body>
-    <header class="header">
-        <h3> iTunes api example</h3>
-        <div class="form">
-            <input id="value1" type="text" placeholder="   Search songs..." />
-            <button id="btn" type="submit" onclick="getAPI();">search</button>
-        </div>
-        <p>Search by song title, author, song number, lyrics, catalog or copyright owner</p>
-    </header>
+    <div class="content">
+        <img class="icon-pgs" src="https://i.vimeocdn.com/portrait/11081265_300x300"/>
+        <header class="header">
+            <h3> iTunes api example</h3>
+            <div class="form">
+                <input id="value1" type="text" placeholder="   Search songs..." />
+                <button id="btn" type="submit" onclick="getAPI();">search</button>
+            </div>
+            <p>Search by song title, author, song number, lyrics, catalog or copyright owner</p>
+        </header>
 
 
-    <section id="section">
-       
+        <section id="section">
+            <div id="totalNumber"></div>
+            <div id="container"></div>
             <div id="list"></div>
-            
-       
-    </section>
+        </section>
+    </div>
 
 
     <footer>
         ----- Powered by PGS -----
     </footer>
-
-
 
     <script type="text/javascript" src="script.js"></script>
 </body>
