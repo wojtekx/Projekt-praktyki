@@ -4,15 +4,13 @@
     font-family: 'Lato', sans-serif;
 }
 
-html, body {
+html, body{
     height: 100%;
-  }
-  body {
+}
+
+body{
     display: flex;
     flex-direction: column;
-  }
-.content{
-    flex: 1 0 auto;
 }
 
 .icon-pgs{
@@ -21,16 +19,24 @@ html, body {
     margin-left: 30%;
 }
 
+.content{
+    flex: 1 0 auto;
+}
+
+                /* START  HEADER*/
+
 .header{
     background-color: rgb(66, 63, 63);
     padding: 10px 0 10px 0;
     min-height: 12vh;
 }
+
 h3 ,p{
     text-align: center;
     margin: 20px 0 20px 0 ;
     color: white;
 }
+
 p{
     font-size: 10px;
     color: rgb(212, 213, 214);
@@ -40,7 +46,6 @@ p{
     display: flex;
     justify-content: center;
 }
-
 
 #value1{
     margin: 0;
@@ -52,7 +57,6 @@ p{
     height: 30px;
     width: 140px;
     padding-left: 10px;
-   
 }
 
 #btn{
@@ -62,40 +66,35 @@ p{
     border-right: 1px solid gray;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    border-left: none;
     border-radius:0 50px   50px 0;
     height: 30px;
     width: 70px;
-    
 }
 
-#section{
-   
+#btn:hover{
+    cursor: pointer;
+}            /* END  HEADER*/
+        
+
+
+            /* START SECTION*/
+#totalNumber{
+    padding: 10px;
+}
+
+#section{ 
     margin: 0 auto;
     max-width: 1200px;
-   
-   
 }
 
-footer{ 
-    background: rgb(66, 63, 63);
-    text-align: center;
-    padding: 15px 0 ;
-    color:rgb(212, 203, 203);
-    font-size: 14px;
-    flex-shrink: 0;
-}
-
-#list{
-    
-    margin: 0 auto;
-    
-
+#list{  
+    margin: 0 auto; 
 }
 
 #container{
 justify-content: center;
 }
-
 
 #list a{
     text-decoration: none;
@@ -106,7 +105,6 @@ justify-content: center;
     border: 1px solid orangered;
     border-radius: 10%;
     padding: 5px;
-    
 }
 
 #list ul{
@@ -114,10 +112,10 @@ justify-content: center;
     display: flex;
     justify-content: center;
 }
+
 #list ul li {
     margin: 10px;
     padding: 10px;
-    
 }
 
 .block{
@@ -127,7 +125,6 @@ justify-content: center;
     margin: 10px;
     padding: 10px;
     background: #f0f0f0;
-    
 }
 
 .block .block-body{
@@ -154,8 +151,7 @@ justify-content: center;
 } 
 
 
-.text1{
-    
+.text1, .text2{
     font-size: 15px;
     color: black;
     font-weight: 600;
@@ -164,33 +160,40 @@ justify-content: center;
     white-space: nowrap;
     max-width: 100px;
     margin: 5px;
-    
 }
+
+.text2{
+    font-weight: 200;
+}
+
 .hr{
     width: 60%;
     border-bottom: 1px dashed #b4b4b4;
 }
 
-.text2{
-    color: black;
-    font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis; 
-    white-space: nowrap;
-    max-width: 100px;
-    margin: 5px;
-    
-}
 #container{
     display: grid;
     grid-template-columns: 33% 33% 33%;
+}               
+                /* END SECTION*/
+
+footer{ 
+    background: rgb(66, 63, 63);
+    text-align: center;
+    padding: 15px 0 ;
+    color:rgb(212, 203, 203);
+    font-size: 14px;
+    flex-shrink: 0;
 }
+
+footer span{
+    letter-spacing: -1px;
+}
+
 @media (max-width: 720px) {
     #container{
        grid-template-columns: 80%; 
     }   
 }
 
-#totalNumber{
-    padding: 10px;
-}
+
